@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Level 1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Level 1" id="BYZ-38-t0r" customClass="ViewController" customModule="JeuBalle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-la-X6J">
+                                <rect key="frame" x="32" y="40" width="311" height="627"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" adjustable="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="raquette.png" translatesAutoresizingMaskIntoConstraints="NO" id="uKO-KF-Jeo">
+                                <rect key="frame" x="145" y="609" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Km-zA-CJt">
+                                <rect key="frame" x="129" y="200" width="132" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.97016815652923238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="10" height="10"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBC-JX-iYL">
+                                <rect key="frame" x="124" y="323" width="126" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Commencer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gw-6k-Rfy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenue dans le niveau 1 !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6od-Xw-k7I">
+                                <rect key="frame" x="88" y="281" width="214" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="8IP-8w-WeI">
+                                <rect key="frame" x="18" y="40" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5k-pw-4B1">
+                                <rect key="frame" x="154" y="40" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nq7-Pa-vih">
+                                <rect key="frame" x="86" y="40" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="v5H-xs-rWe">
+                                <rect key="frame" x="290" y="40" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="JbM-zY-3CU">
+                                <rect key="frame" x="222" y="40" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-0V-dLb">
+                                <rect key="frame" x="51" y="60" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="QUi-8S-kMD">
+                                <rect key="frame" x="183" y="60" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="pEv-rb-wYf">
+                                <rect key="frame" x="117" y="60" width="66" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brique-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="AqK-Dp-jQF">
+                                <rect key="frame" x="249" y="60" width="70" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-K7-bTZ">
+                                <rect key="frame" x="171" y="109" width="33" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JcS-la-X6J" secondAttribute="trailing" constant="16" id="0jt-Wk-Hsb"/>
+                            <constraint firstItem="JcS-la-X6J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="771-YK-4RI"/>
+                            <constraint firstItem="JcS-la-X6J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="gPb-iy-veK"/>
+                            <constraint firstItem="JcS-la-X6J" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="jmq-n0-p5a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ViewBalle" destination="8nn-K7-bTZ" id="at8-9M-bKi"/>
+                        <outlet property="ViewRaquette" destination="uKO-KF-Jeo" id="dSD-ZX-lQr"/>
+                        <outlet property="brique" destination="AqK-Dp-jQF" id="dmo-EE-pBt"/>
+                        <outlet property="brique1" destination="QUi-8S-kMD" id="tVS-Ue-cnq"/>
+                        <outlet property="brique2" destination="pEv-rb-wYf" id="nwK-RH-cRB"/>
+                        <outlet property="brique3" destination="SwR-0V-dLb" id="Geq-3q-fj4"/>
+                        <outlet property="brique4" destination="v5H-xs-rWe" id="mLV-di-IpE"/>
+                        <outlet property="brique5" destination="JbM-zY-3CU" id="fff-yt-dEE"/>
+                        <outlet property="brique6" destination="N5k-pw-4B1" id="oPp-Y9-pMb"/>
+                        <outlet property="brique7" destination="Nq7-Pa-vih" id="sSW-7A-ri0"/>
+                        <outlet property="brique8" destination="8IP-8w-WeI" id="hkT-Xr-zl1"/>
+                        <outlet property="playButton1" destination="JBC-JX-iYL" id="w9s-yu-Obz"/>
+                        <outlet property="timerLabel" destination="1Km-zA-CJt" id="yRP-cX-wGW"/>
+                        <outlet property="welcomeLabel" destination="6od-Xw-k7I" id="Vl5-cd-2FZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="-714.69265367316348"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="dKI-qK-wBq">
+            <objects>
+                <viewController title="Main" id="VHk-Sq-khG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUX-2o-jiU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSX-ti-S9c">
+                                <rect key="frame" x="127" y="391" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continuer"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ECB-Al-8N1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG3-LD-uWJ">
+                                <rect key="frame" x="119" y="151" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y3z-7h-QYT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKA-Ya-Y3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="-715.59220389805103"/>
+        </scene>
+        <!--Level 2-->
+        <scene sceneID="2rd-Sb-6kD">
+            <objects>
+                <viewController title="Level 2" id="kf0-Ad-Kc0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rEh-Zz-M3z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YJX-1D-5U6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIu-iz-6PW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="-715"/>
+        </scene>
+        <!--Level 3-->
+        <scene sceneID="qlX-CN-Chs">
+            <objects>
+                <viewController title="Level 3" id="th6-aX-FiR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zc0-yM-Rgk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="n1m-qe-01v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsc-UW-1QW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="-716"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Brique-01.png" width="430" height="169"/>
+        <image name="ball2.png" width="128" height="128"/>
+        <image name="bg3.jpg" width="1920" height="1080"/>
+        <image name="raquette.png" width="828" height="193"/>
+    </resources>
+</document>
